@@ -1,0 +1,52 @@
+---
+Actimize01_Orders :
+ columnnames :
+  - order_depot_id :
+      fakerprovider : "bothify"
+      fakerarguments : {'text':'??##?#','letters':'ABCDEFGHIJKLMNOPQRSTUVWXYZ'}
+      candidatekey : False
+      lookup : 
+      matchon :
+      matchby :
+  - order_id : 
+      fakerprovider : "pyint"
+      fakerarguments : {'max_value':1000000}
+      candidatekey : True
+      lookup : 
+      matchon :
+      matchby :
+  - security_id :
+      fakerprovider : 
+      fakerarguments : 
+      candidatekey : False
+      lookup : 'Actimize03_RefPrice.security_id'
+      matchon : 
+      matchby: 
+  - limit_price :
+      fakerprovider : "price_in_range"
+      fakerarguments : 
+      candidatekey : False
+      lookup : 'Actimize03_RefPrice.reference_price'
+      matchon : 'Actimize03_RefPrice.security_id'
+      matchby : 'security_id'
+  - order_side : 
+      fakerprovider : "buy_sell"
+      fakerarguments : {}
+      candidatekey : False
+      lookup : 
+      matchon : 
+      matchby : 
+  - order_start_date : 
+      fakerprovider : "date_between"
+      fakerarguments : {'start_date':'-30d'}
+      candidatekey : False
+      lookup : 
+      matchon :
+      matchby :
+  - order_end_date : 
+      fakerprovider : "future_date"
+      fakerarguments : {}
+      candidatekey : False
+      lookup : 
+      matchon :
+      matchby : 

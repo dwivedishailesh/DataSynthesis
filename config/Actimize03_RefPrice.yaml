@@ -1,0 +1,19 @@
+---
+Actimize03_RefPrice :
+ columnnames :
+  - security_id :
+      fakerprovider : "bothify"
+      fakerarguments : {'text':'??##########','letters':'ABCDEFGHIJKLMNOPQRSTUVWXYZ'}
+      candidatekey : True
+      lookup : 
+      matchon :
+      matchby :
+  - reference_price : 
+      fakerprovider : "pyfloat"
+      fakerarguments : {'right_digits':4, 'positive':True, 'min_value':0.1, 'max_value':100.0001}
+      candidatekey : False
+      lookup :
+      matchon :
+      matchby :
+      
+      

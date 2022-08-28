@@ -1,0 +1,17 @@
+---
+Actimize02_Executions :
+ columnnames :
+  - order_id : 
+      fakerprovider : 
+      fakerarguments : 
+      candidatekey : False
+      lookup : "Actimize01_Orders.order_id"
+      matchon : 
+      matchby : 
+  - execution_id : 
+      fakerprovider : "pyint"
+      fakerarguments : {'max_value':1000000}
+      candidatekey : True
+      lookup : 
+      matchon :
+      matchby : 
