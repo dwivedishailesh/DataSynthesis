@@ -1,7 +1,7 @@
 ---
 Sequence :
  - Actimize03_RefPrice :
-    numrows : 300000
+    numrows : 10
     extension : '.dat'
  - Actimize01_Orders : 
     numrows : 100
