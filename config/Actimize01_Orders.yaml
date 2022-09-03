@@ -23,7 +23,7 @@ Actimize01_Orders :
       matchon : 
       matchby: 
   - limit_price :
-      fakerprovider : "price_in_range"
+      fakerprovider : 'price_in_range'
       fakerarguments : 
       candidatekey : False
       lookup : 'Actimize03_RefPrice.reference_price'

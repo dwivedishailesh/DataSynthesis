@@ -1,11 +1,11 @@
 ---
 Sequence :
  - Actimize03_RefPrice :
-    numrows : 10
+    numrows : 100000
     extension : '.dat'
  - Actimize01_Orders : 
-    numrows : 100
+    numrows : 10000
     extension : '.dat'
- - Actimize02_Executions : 
-    numrows : 50
+ - Actimize02_Executions :
+    numrows : 500
     extension : '.dat'
